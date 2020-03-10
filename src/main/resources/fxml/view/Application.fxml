@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.sicpa.interview.test.javafx.controller.ApplicationController">
+    <TextArea wrapText="true" disable="true">
+        The auto-capitalize listener and vowel filter behave correctly when applied separately,
+        but not when they are applied together on the same TextField.
+        Find the cause of the bug and solve it.
+    </TextArea>
+    <HBox alignment="CENTER">
+        <Label>TextField with auto-capitalize listener: </Label>
+        <TextField fx:id="textFieldAutoCapitalize"/>
+    </HBox>
+    <HBox alignment="CENTER">
+        <Label>TextField with vowel filter: </Label>
+        <TextField fx:id="textFieldVowel"/>
+    </HBox>
+    <HBox alignment="CENTER">
+        <Label>TextField with both auto-capitalize listener and vowel filter: </Label>
+        <TextField fx:id="textFieldBoth"/>
+    </HBox>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
